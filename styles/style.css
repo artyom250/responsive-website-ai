@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    scroll-behavior: smooth;
+    color: white;
+}
+
+body {
+    background-color: #080808;
+}
+
+.block {
+    padding: 100px 130px;
+}
+
+@media(max-width: 1200px) {
+    .sidebar {
+        background-color: #0c0c0c;
+        position: fixed;
+        pointer-events: none;
+        transform: translateY(-25px);
+        width: 100%;
+        opacity: 0;
+        top: 0%;
+        left: 0%;
+        transition: 0.3s;
+        padding: 35px;
+        box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.5);
+    }
+
+    .sidebar.drop {
+        pointer-events: all;
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    .sidebar ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .sidebar .started {
+        margin-left: 0px;
+    }
+
+    #burger {
+        display: block;
+    }
+}
+
+@media(max-width: 1150px) {
+    footer ul {
+        position: initial;
+        top: initial;
+        left: initial;
+        transform: initial;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        align-items: initial;
+        gap: 50px;
+    }
+}
+
+@media(max-width: 1120px) {
+    .features.grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .features.grid .feature:nth-child(1) {
+        height: auto;
+    }
+}
+
+@media(max-width: 1100px) {
+    .price {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .features.flex2 {
+        flex-direction: column;
+    }
+
+    .feat-img.f3 {
+        max-width: 100%;
+    }
+}
+
+@media(max-width: 1000px) {
+    .blog {
+        columns: 2;
+    }
+
+    .block {
+        padding: 100px 80px;
+    }
+
+    nav {
+        padding: 0px 80px;
+    }
+
+    footer {
+        padding: 0px 80px 100px 80px;
+    }
+
+    .hero {
+        margin: 190px 80px 100px 80px;
+    }
+}
+
+@media(max-width: 900px) {
+    .features {
+        flex-wrap: wrap;
+    }
+
+    .heading {
+        font-size: 45px;
+    }
+}
+
+@media(max-width: 850px) {
+    .features.grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 720px) {
+    .heading {
+        font-size: 35px;
+        line-height: 1.3em;
+    }
+}
+
+@media(max-width: 650px) {
+    .price {
+        grid-template-columns: 1fr;
+    }
+
+    .blog {
+        columns: 1;
+    }
+
+    .blog .feature {
+        margin-bottom: 20px;
+    }
+
+    .price {
+        grid-gap: 20px;
+    }
+
+    .features {
+        gap: 20px;
+    }
+
+    .quest div p {
+        font-size: 16px;
+    }
+
+    #answer {
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 600px) {
+    .features.grid .feature:nth-child(1) {
+        grid-column: initial;
+        grid-row: initial;
+        height: fit-content;
+    }
+
+    .features.grid .feature:nth-child(4) {
+        grid-column: initial;
+    }
+
+    .features.grid {
+        grid-template-columns: 1fr;
+    }
+
+    .features.grid .feature:nth-child(1) .feat-img img, 
+    .features.grid .feature:nth-child(4) .feat-img img {
+        border: none;
+        padding: 0px;
+    }
+
+    .block {
+        padding: 100px 50px;
+    }
+
+    nav {
+        padding: 0px 50px;
+    }
+
+    footer {
+        padding: 0px 50px 100px 50px;
+    }
+
+    .hero {
+        margin: 150px 50px 100px 50px;
+    }
+}
+
+@media(max-width: 500px) {
+    .footer-bottom div {
+        display: none;
+    }
+}
+
+@media(max-width: 460px) {
+    .block {
+        padding: 100px 40px;
+    }
+
+    nav {
+        padding: 0px 40px;
+    }
+
+    footer {
+        padding: 0px 40px 100px 40px;
+    }
+
+    .hero {
+        margin: 150px 40px 100px 40px;
+    }
+
+    .heading, .heading.section {
+        font-size: 30px;
+    }
+
+    .features.flex2 {
+        gap: 40px;
+    }
+
+    .started {
+        margin-left: 0px;
+    }
+
+    .contact {
+        padding: 50px 35px;
+    }
+}
+
+@media(max-width: 400px) {
+    .hero .links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero .links a {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .footer-bottom {
+        margin-top: 25px;
+    }
+}

@@ -1,0 +1,85 @@
+.links button {
+    color: white;
+    background: none;
+    cursor: pointer;
+    border: 1px solid #1f1f1f;
+    outline: none;
+    padding: 15px 25px;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.links button.active {
+    background: #b369fc;
+    color: white;
+}
+
+.price {
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 60px;
+    max-width: 1130px;
+}
+
+.price-title {
+    background: #080808;
+    width: fit-content;
+    border: 1px solid #1f1f1f;
+    border-radius: 99px;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+.price-text {
+    color: #d6d7e0;
+    font-size: 14px;
+    line-height: 1.8em;
+    margin-top: 10px;
+}
+
+.price-num {
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.price i {
+    color: #e6cfff;
+    padding: 0px;
+    font-size: 26px;
+}
+
+.price ul {
+    margin-top: 30px;
+}
+
+.price ul li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.price ul li:not(:nth-child(1)) {
+    margin-top: 8px;
+}
+
+.price ul li .price-text {
+    margin-top: 0px;
+}
+
+.price a {
+    background-color: #b369fc;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 30px;
+    font-weight: 500;
+}
+
+.price .feature:nth-child(2) {
+    border: 1px solid #b369fc;
+}

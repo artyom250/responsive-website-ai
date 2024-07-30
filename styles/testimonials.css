@@ -1,0 +1,33 @@
+.stars {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin-top: 30px;
+}
+
+.stars i {
+    font-size: 20px;
+    padding-bottom: 0px;
+}
+
+.user {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 40px;
+}
+
+.job {
+    color: #d6d7e0;
+    font-size: 14px;
+    line-height: 1.8em;
+}
+
+.name {
+    font-weight: 500;
+    font-size: 18px;
+}

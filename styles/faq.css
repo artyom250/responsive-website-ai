@@ -1,0 +1,48 @@
+.faq {
+    margin: auto;
+    max-width: 1100px;
+    margin-top: 30px;
+}
+
+.quest {
+    cursor: pointer;
+    background-color: #0c0c0c;
+    border: 1px solid #1f1f1f;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.quest:not(:nth-child(1)) {
+    margin-top: 15px;
+}
+
+.quest div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.quest div p {
+    font-size: 18px;
+    line-height: 1.5em;
+}
+
+.quest div i {
+    font-size: 24px;
+}
+
+#answer {
+    display: none;
+    color: #d6d7e0;
+    padding-top: 25px;
+    line-height: 1.7em;
+}
+
+#answer.drop {
+    display: flex;
+}
+
+#answer.drop2 {
+    display: flex;
+}
